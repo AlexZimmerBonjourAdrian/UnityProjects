@@ -1,0 +1,1383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{1579B4D2-D9B8-1D4B-CDCF-58811782A925}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_2020_3_27;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2020.3.27f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\animatorTriggerEnterExitEvent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\laserMine.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\skidsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\changePlayerStateOnTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setObjectParentSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponPartstToRemoveOnPickupCreation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Powers Behaviors\joinObjectsPower.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Turret\manageAITarget.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\deviceStringAction.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\customCameraEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistancePlayerMissionsListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\artificialObjectGravity.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\UIMouseHoverEvent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\cameraAxisComponentsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\screenObjectivesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\playerPrefsCustomData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\extraCameraEffectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabObjectsPowerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveMeleeWeaponsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\playerPickupIconManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\attachmentInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\playerHealthBarManagementSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Skills System\skillSlotPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\electronicDevice.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\enemyHackPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\Scanner System\simpleScannerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Experience System\objectExperienceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\mechanismPart.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\inputManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\consumableInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\rotateObjects.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\jumpPlatform.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryCaptureManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\playerController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\carController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Game Manager\playerCharactersManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Decal\decalTypeInformation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Cutscene\pauseOrResumePlayerControllerAndCameraSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveMenuIconElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryBankUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceWeaponListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\ragdollActivator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setInitialPositionAtGameStart.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\spiderControllerInterface.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabPhysicalObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\motorBikeController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\checkCollisionType.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\replaceMaterialSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\getObjectFromInventorySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveStationUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleInterface.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\persuasionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\eventInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\statType.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\magicSpellActionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\showPlayerInputValues.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Quick Access System\inventoryQuickAccessSlotElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\friendListElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\cameraControllerManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\ammoInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorObjectSlotPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\weaponAttachmentInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\rollOnLandingSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\slideSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Skills System\skillSlotPanelInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\simpleObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\outlineObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\hologramDoor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\dragObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\playerOptionsEditorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponSwayInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\moveCameraToDevice.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\laserConnector.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Panel Info System\infoPanelOnScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\removeGravityFromCharacterSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\playSoundOnTriggerEnter.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\findObjectivesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Powers Behaviors\changeObjectsPositionPower.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\Grappling Hook System\objectToAttractWithGrapplingHook.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\powerSlotElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Hide System\hideCharacterFixedPlaceSystemPlayerManagement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeAttackSurfaceInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapZoneUnlocker.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\playerActionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\saveGameInfoHelper.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\bowHolderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\interactionObjectMessage.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\setLaserRefractions.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\eventObjectFoundOnRaycastSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\customCharacterControllerManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveStatsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeCombatAttackStartState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\templateAbilitySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleLaser.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Ladder System\ladderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Experience System\experienceObtainedInfoPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\BezierSpline.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\GKC_Triangulator_Utils.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\laserAttachment.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\wallRunningSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\meleeShieldOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\simpleWeaponSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\externalDialogTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Ladder System\playerLadderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\slideZoneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabObjectParent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\playerStealthSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleWeaponSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Vehicles\vehicleCameraShake.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveInventoryBankInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\playerInputManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Documentation\Integrations\UMA\UMA\UMAIgnoreTransformAndChilds.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Head Track\headTrackTarget.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\Grappling Hook System\grapplingHookTarget.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\Radio\songsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\hoverBoardAnimationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\useInventoryObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\genericRagdollBuilder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleHUDManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\GKCCharacterController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\damageCharacterOnCollision.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\applyDissolveOnArea.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setFixedRotation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\Grappling Hook System\grapplingHookSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Puzzles\pressObjectsInOrderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\glossaryElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Turret\enemyLaser.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\gravityObjectManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\waypointPlayerPathSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\accessTerminal.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\dropPickUpSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\externalShakeInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Captures\remoteEventOnCameraCaptureSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleActionButton.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\animalAINavmesh.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\inventoryExtraSpacePickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\spawnObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabObjects.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\placeObjectInCameraEditorPositionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\brainwashAIState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\meleeWeaponInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponsGrabbedManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\securityCamera.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIViewTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCMeleeConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\solarSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\playerCameraLockedSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\mouseCursorController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\scanElementInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\inputActionManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Checkpoint\checkpointSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\vehicleFuelOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponTransformInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Level Manager\travelStationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\parentAssignedSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponTransformData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\savePlayerInventoryInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Powers Behaviors\pushObjectsPower.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\waypointPlatform.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\hitCombat.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\blackHoleProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\playerInputPauseSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\shieldSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\objectDistributorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\weaponsAttachmentUIManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponAnimatorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\tagLayerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Override System\overrideCameraController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\screenActionInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\teleportationPlatform.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventorySlotOptionsButtons.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\moveObjectSmoothlySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\experienceMultiplierPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\remotePlayerNavmeshOverrideSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\lockedCameraSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\inputDoubleClickEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabObjectEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\mapPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\weakSpotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\cameraEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\otherPowers.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\savePlayerOptionsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Captures\cameraPerspectiveSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\stairAdherenceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Decal\decalManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\sliceObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleLamp.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\externalControllerBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Level Manager\travelStationUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\AI\vehicleAINavMesh.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Others\setTransparentSurfacesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\oxygenOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCInventoryConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\shipInterfaceInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AINavMesh.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\movableDoor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\armorSurfaceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\flyingController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIPatrolSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\quickTravelStationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Tutorial System\tutorialInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\applyHealOnArea.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Captures\captureSlot.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\Slice System\sliceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\playerSphereModeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\airAttackToLandSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\powersAIBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\simpleSwitch.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Point And Click\playerNavMeshSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponShellSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\zeroGravityRoomSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\AI\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpIconInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\playerStateSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\cameraEffectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Head Track\headTrack.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\gravitySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Checkpoint\checkpointElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\healthSliderInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\externalShakeInfoListElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\openInitialPopUpWindow.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\editButtonInput.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\playerInputPanelSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\dialogContentSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Climb System\ledgeZoneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\objectiveIconInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\pauseAnimationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\arrowManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\putObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\vehicleGravityControl.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\dashSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\mouseOperations.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponTransformInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\jetpackFuelOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\weaponAttachmentSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\playerDamageOnScreenInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\showValuesOnScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\Istat.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\manualDetonationMineSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\touchButtonColorChangeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\simpleLaser.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\cameraStateInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\Slice System\simpleSliceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\throwObjectTrayectorySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\chestSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\rotatoryGear.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\playerScreenObjectivesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Scriptable Objects\inventoryListManagerData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\changeObjectColors.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveGameInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\sceneSlot.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Skills System\playerSkillsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\shieldOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\meleeWeaponConsumablePickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Character Builder\characterSettingsTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\eventParameters.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\ammoPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\slowDownTarget.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\turretController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\deviceToActive.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\smartphoneDevice.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapIconType.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceWeaponAttachmentListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\weaponInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\States\characterPropertiesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\setText.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageInScreen.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\putGear.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\abilityInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponAmmoUsingPlayerStat.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryBankManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\Console Mode\consoleMode.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\meleeShieldPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryCaptureManagerTransparent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\weaponsAIBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\laserDotOnScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\States\characterSlowDownVelocity.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\setMapOrientationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\playSoundOnCollision.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Override System\overrideController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorCategorySlotPanelInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\taskCounterSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\customActionSystemTrigger.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Puzzles\pianoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\setMissionSubObjectiveStateRemotelySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\getInventoryObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\bowSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\powersAndAbilitiesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\meleeShieldInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\playerAbilitiesUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Scriptable Objects\objectTransformInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\shieldPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\energyPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\projectilesOnCharacterBodyManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\flamethrowerWeapon.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Pooling System\GKC_PoolingSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\abilityPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleAnimationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\menuPause.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Captures\cameraCaptureSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\dialogManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Character Builder\bodyMountPointsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabbedObjectState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\carryPhysicallyObjectFromInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\footStep.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\energyOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\moneyPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\particleTriggerDetection.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\wallSlideJumpSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\Radio\radioSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapCreator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\camera2_5dZoneLimitSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\moveObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\AI Behavior Info.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\refractionCube.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Animator IK\IKFootSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\spiderCharacterController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Animator IK\OnAnimatorIKComponent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\applyEffectOnArea.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Skills System\playerSkillsUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\headExplodeExample.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\railMechanism.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\staminaSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\States\setCharacterAffectedState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\sleepingStateIconSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\characterActionSystemChecker.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\dialogSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Level Manager\travelStationPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryBankSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageOrHealTrigger.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\playerCamera.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\arrowProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\launchedObjects.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageOnScreenInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\inputPanelUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Quick Access System\inventoryQuickAccessSlotsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\particleCollisionDetection.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\crate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleDamageReceiver.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\staminaPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Powers Behaviors\useDevicesAtDistancePower.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\explosiveBarrel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\inventoryPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\showMessageOnHUDSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabObjectProperties.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\ignoreCollisionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorCategorySlotPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\setCameraFOVValue.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\padlockSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\playerStatesManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\elevatorFloorsPanel.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveSkillsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\examineObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\customNoiseSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\setCanvasParentSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryMenuPanelsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\Grappling Hook System\grapplingHookEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpElementInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\doorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageHitReactionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Others\dynamicSplitScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\drainStatSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\audioClipBip.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Scriptable Objects\objectTransformData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Level Manager\travelStationPanelInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\health.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceMeleeWeaponListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\spriteAnimatorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\noiseSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Others\playerCullingSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryMenuIconElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryObjectToEquipInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Level Manager\levelManagerIngame.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCVendorConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\powersListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\healthPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\playerIdleSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\meleeAIBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\grabObjectsStrengthPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\photoModeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryWeightManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Cutscene\cameraWaypointSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\wolfCharacterController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Puzzles\puzzleSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Projectiles Behaviors\brainwashAIProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\rotatingPlatform.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Action System\actionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\ignoreCollisionHelper.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponBuilder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\pressMultipleKeysActionInputSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\flyingTurretSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\projectileInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\moveDeviceToCamera.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\savePlayerWeaponsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\flashlight.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\externalCameraShakeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveDialogInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\staminaOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\fallingPlatform.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\remotePlayerNavmeshOverride.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\generalItemOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\ammoOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\applyDamageOnArea.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Tutorial System\tutorialUISystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistancePlayerSkillsListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\externalShakeListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\wallRunningZoneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\weaponPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\saveGameSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\applyDamage.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponSlotElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\coinPocketSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\matchPlayerToTargetSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\pickupType.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\vendingMachine.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleSetQuaternionRotation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Hide System\hideCharacterFixedPlaceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\plasmaCutterProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\elevatorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Panel Info System\playerInfoPanelOnScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCCurrencyConditionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\healerWeapon.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Climb System\climbLedgeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\addPatrolSystemToAI.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\Slice System\cuttingModeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\addForceToObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\solidCameraEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleLensFlareSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\examineObjectSystemPlayerManagement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponRangeAttacksSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Faction\characterFactionManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\customCharacterControllerBase.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\destroyGameObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\noiseMeshSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Game Manager\prefabsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\healthElementInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\onEnableCheckSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\characterStateIconSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Close Combat\AICloseCombatSystemBrain.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Melee Combat System\AIMeleeCombatSystemBrain.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\objectOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Documentation\Integrations\UMA\UMA\UMAIgnoreTransformAndChildsEditor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\timeBullet.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryListElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\externalDamageProperties.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabPhysicalObjectMeleeAttackSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\audioSourceInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\Scanner System\scannerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\Slice System\sliceSystemUtils.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\AIMountManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Mobile\touchJoystick.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\AI\WaypointCircuit.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\SplineWalker.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\consoleLogOnScreenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Puzzles\placeObjectSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\playerWeaponsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\statsSettingsTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponObjectInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\playerComponentsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\fieldOfViewMeshSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\characterDamageReceiver.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\oneWayPlatformSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapObjectInformation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\sceneLoadSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIHidePositionsManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\IKWeaponSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\IKDrivingSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\vehicleController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\emptyVehicleController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\slowObjectsColor.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\dissolveProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\Grappling Hook System\grapplingHookTargetsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\hoverBoardWayPoints.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Game Manager\gameManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\attrackObjectsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Animator IK\handsOnSurfaceIKSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\projectileSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setRigidbodyStateSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\GKCSimpleRiderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\footStepSurfaceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\closeCombatAIBehavior.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\playerAbilitiesUIEditorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\meleeWeaponConsumableInventoryPrefabCreationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\homeMenu.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\plasmaCutterSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\customAbilitySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIWayPointPatrol.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\launchTrayectory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\paragliderSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\oxygenPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\SimpleFPSCounter.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\experiencePickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\templateStatTypeComponent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveTravelStationInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\dummyVehicleController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\weaponAttachmentOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\setGravity.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\playerTeleportSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\showGameInfoHud.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveLogSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\clock.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\manualDetonationMineObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\vehicleFuelPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\pressurePlate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\objectSignalForTargetToAI.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\initialPopUpWindow.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\inventoryWeightBagPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Projectiles\spearProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\grabbedObjectMeleeAttackSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\editControlPosition.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\throwGrenadeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\laserVisionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\meleeWeaponConsumableOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\securityCameraControl.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Stats System\playerStatsSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Override System\overrideInputManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Faction\factionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Foot Step\footStepManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setObjectScaleSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\attachmentSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\hoverBoardController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\healthOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\featuresManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\upperBodyRotationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Puzzles\puzzleSystemPlayerManagement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\States\characterStateAffectedInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\nanoBlade.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\completeDialogInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\laser.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Character Builder\ragdollBuilder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\generalPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AINavMeshMoveInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\powerPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\setGameObjectActiveState.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\remoteEventActivator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\closetSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\abilitySlotElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\damageInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\buildingAndFloorObjectInfoSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\eventTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\GKC_Utils.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Player Camera\headBob.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceInventoryListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\powersListElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\editInputPanelInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Powers Behaviors\changeGlobalGravityPower.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Objectives Mission System\objectiveStationSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponRangeAttacksManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\hideBodyPartOnCharacterSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\healthManagement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\simpleSniperSightSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpIcon.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\objectToFollowOnThrowMeleeWeapon.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\airCraftController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Camera Effect\pixelCameraEffect.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\Attachments\attachmentIconInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Vehicles\vehicleCameraController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\destroyableObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\vehicleBuilder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\JoystickData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\swimTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\meleeWeaponOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceTravelStationListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Camera\Others\setTransparentSurfaces.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\playerHUDManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistanceDialogContentListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\computerDevice.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\followObjectPositionUpdateSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Custom AI Behavior\AIFireWeaponsSystemBrain.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\jetpackSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\Inventory Pickups Behaviour\weaponOnInventory.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\playerGravitySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\playerShieldSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\currencySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\simpleTurretRobot.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\saveGameSlot.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\meleeWeaponPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\Melee Combat System\meleeWeaponTransformData.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveMissionsInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\mapTileBuilder.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\AIHealtSliderInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\closeCombatSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\animatorTriggerEvent.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\dissolveObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\usingDevicesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\playerInventoryCategoriesListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\skillPointPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\customCharacterControllerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\Turret\AITurret.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\freeFallCharacterActivator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\oxygenSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\preventClickDrag.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Condition System\GKCConditionInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\laserDevice.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Map\addMapObjectInformation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\eventObjectFoundOnCaptureSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\projectileImpactSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\fadeObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\basicAnimatorController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Character Builder\buildPlayer.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Demo\openStructure.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\weaponListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Skills System\skillSettingsTemplate.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\jetpackFuelPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\playerPrefsCustomInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\actionInputDelaySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Event System\remoteEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\padlockSystemPlayerManagement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Inventory\inventoryCategoryInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vendor System\vendorObjectSlotPanelInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\activateReactionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\flySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\Custom Abilities\laserPlayer.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\laserReceiver.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\gravityGun.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Point And Click\pointAndClickElement.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\playerWeaponSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Experience System\playerExperienceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Health\healthBarManagementSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\slowObject.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Override System\objectToOverrideSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Head Track\pointToLook.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\followObjectPositionSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleCoinPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\touchScreenPinchSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\hackTerminal.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Tutorial System\tutorialActivatorSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Input\touchButtonEventSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Override System\overrideElementControlSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Others\simpleAudioPlay.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\pickUpsScreenInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\sphereController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Hide System\hideFromEnemiesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Tutorial System\playerTutorialSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\PickUps\Pickups Behaviour\weaponAttachmentPickup.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Generic Model Controller\setCustomCharacterStateTriggerSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\swimSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistancePlayerStatsListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveVendorInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\IKWeaponInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Vehicles\Vehicle Controllers\hoverCraftController.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\weaponLaser.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Extra Movements\wallSlideJumpZoneSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Gravity\objectToUseArtificialGravitySystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Grab Objects\objectToPlaceSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\zipline.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Persistance Classes\persistancePlayerOptionsListBySaveSlotInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Game Manager\mainManagerAdministrator.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\fakeProjectileTrailSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Save System\Custom Class To Save\saveInfo.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Player\Animator IK\IKSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Powers\New Projectiles Behaviors\removeGravityFromCharactersProjectile.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Mobile\touchButtonListener.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Dialog System\characterDialogContentSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\AI\friendListManager.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Abilities System\playerAbilitiesSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Combat System\perfectDodgeSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Menu\openMenuSystem.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Devices\rechargerStation.cs" />
+    <Compile Include="Assets\Game Kit Controller\Scripts\Weapons\New Weapon Behaviors\surfaceToSlice.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Game Kit Controller\Documentation\Integrations\UMA\UMA 2 Integration.txt" />
+    <None Include="Assets\Game Kit Controller\Shaders\Others\Transparent Diffuse Stipple.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Dissolve.shader" />
+    <None Include="Assets\Game Kit Controller\Documentation\CHARACTERS CROSSING THE GROUND FIX (Import External Packages Before Starting).txt" />
+    <None Include="Assets\Game Kit Controller\Documentation\Integrations\EBS\GKCInputBehaviour.txt" />
+    <None Include="Assets\Game Kit Controller\Shaders\Projector.shader" />
+    <None Include="Assets\Game Kit Controller\Documentation\Patreon Honorable Mention.txt" />
+    <None Include="Assets\Game Kit Controller\Shaders\Glow Shader.shader" />
+    <None Include="Assets\Game Kit Controller\Documentation\Integrations\Universal AI\GKCUniversalAIDamageDetectionInterface.txt" />
+    <None Include="Assets\Game Kit Controller\Shaders\Others\See Through Surfaces 1.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\additive.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Solid Shader.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Night Vision.shader" />
+    <None Include="Assets\Game Kit Controller\Documentation\Unity Bug on 2018.3 with Rigidbodies Fix.txt" />
+    <None Include="Assets\Game Kit Controller\Shaders\Simple Blur Shader.shader" />
+    <None Include="Assets\Game Kit Controller\Materials\Probuilder\pb_StandardVertexColor.shader" />
+    <None Include="Assets\Game Kit Controller\Demo 3d Model\Characters\Third Person Character\Animation\Other Animations\Ellen\Shaders\EyeBallsHD.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Pixel Shader.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Others\Transparent Diffuse (Improved).shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\laserShader.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Outlined.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\SplitScreenMask.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Drunk.shader" />
+    <None Include="Assets\Game Kit Controller\Demo 3d Model\Characters\Third Person Character\Animation\Other Animations\Ellen\Shaders\SculptedHair.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Others\See Through Surfaces 2.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\runShader.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Others\Cloak Shader.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Oil Paint.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\textShader.shader" />
+    <None Include="Assets\Game Kit Controller\Shaders\Camera Effects\Underwater Shader Effect.shader" />
+    <None Include="Assets\Game Kit Controller\Prefabs\Particles\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+    <None Include="Assets\Game Kit Controller\Demo 3d Model\Characters\Third Person Character\Animation\Other Animations\Ellen\Shaders\ToonSkin.shader" />
+    <None Include="Assets\Game Kit Controller\Documentation\Readme.txt" />
+    <None Include="Assets\Game Kit Controller\Documentation\Old documentation\IMPORTANT ABOUT OLD DOCUMENTATION.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>D:\Unity\2020.3.27f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
